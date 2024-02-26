@@ -2,9 +2,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.*;
 
+import static java.util.Collections.*;
+
 public class findMedian {
     public static int findmedian(List<Integer> arr){
-        Collections.sort(arr);
+        sort(arr);
         int median = arr.get(arr.size()/2);
         return median;
     }
